@@ -1,4 +1,4 @@
-# Testing. you can just ignore it
+# How to get to my websites?
 URL:
 https://mingmingfish.github.io/MySites/ + path + filename
 
