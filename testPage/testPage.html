@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+    style:
+        幾乎各種標籤都可加上style屬性
+        如<p style="color:red;"></p>
+        style屬性中引述為CSS的代碼，寫法詳閱test.css
+
+    style的另一種寫法:
+        <head>
+            ...
+            <style>
+                p{
+                    color:red;
+                    background-coloer:blue;
+                    ...
+                }
+                h1{
+                    CSS_code...
+                }
+            </style>
+        </head>
+        將以下出現的該標籤都套用此CSS，若下方個別設定則會覆蓋
+
+    將CSS引入html
+        <link rel="stylesheet" href="style.css"/>
+            style.css為檔名，路徑表示法見連結標籤寫法
+    .
+    ------------------------------------------------------------------------------------------------------------------------
+    id / class
+        id="唯一識別名稱" 
+            相當於物件的變數名稱
+            例:
+                <p id="article1">文章1</p>
+        class="類別群組"
+            可對多對象指定相同名稱進行分類
+            例:
+                <p class="text">文字內容</p>
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+    常用標籤
+        制式架構
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <meta標籤...>
+                    <meta charset="UTF-8"/> 網站編碼方式
+                    <meta name="description" content="給搜尋引擎預覽的文字內容"/>
+                    <meta name="author" content="網頁作者"/>
+                    <meta name="keywords" content="關鍵字1, 關鍵字2,..."/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> "依畫面寬度調整網頁寬度(手機/電腦等), 初始縮放比=100%"
+                <title>網頁名稱</title>
+                <style>
+                    ...CSS Code
+                </style>
+            </head>
+            <body>
+                網站本體
+                <script src="fileName.js"></script> 引入檔案
+                <script>
+                    js_code... 直接寫
+                </script>
+            </body>
+        制式架構
+    ------------------------------------------------------------------------------------------------------------------------
+        文字標籤
+            <h1>內容</h1> 標題，可從h1~h6
+            <p>內容</p> 段落文字(會換行)
+            <b>粗體文字</b> <i>斜體文字</i>
+            <br/> 換行
+        文字標籤
+    ------------------------------------------------------------------------------------------------------------------------
+        連結標籤
+            <a href="link.address">連結名稱</a> 
+                網址/同資料夾的檔名/位址
+                "../檔名" 上一層資料夾檔案
+            <img src="link.address" width="number" height="number"/>
+                圖片(位址) width/height標籤選用
+            <video src="address" controls width="number" height="numer">無法載入影片時的文字</video>
+                嵌入影片檔 寬高參數選用
+            <iframe width="" height="" src="嵌入碼"/>
+                嵌入YouTube影片，嵌入碼: YT影片>分享>嵌入>複製
+        連結標籤
+    ------------------------------------------------------------------------------------------------------------------------
+        列表/表格
+            <ul>
+                <li>something1</li>
+                <li>something2</li>
+                ...黑點的列表
+            </ul>
+            <ol type="1/A/a/I/i">
+                <li>number1</li>
+                <li>number2</li>
+                ...有數字排序的列表
+            </ol>
+            <table>
+                <tr>行1
+                    <td>列1</td>
+                    <td>列2</td>
+                    ...
+                </tr>
+                <tr>行2
+                    <td>列1</td>
+                    <td>列2</td>
+                    ...
+                </tr>
+                ...
+            </table>
+        列表/表格
+    ------------------------------------------------------------------------------------------------------------------------
+        容器
+            <div style="CSS_Code">
+                ...內容程式碼
+                區塊占用全部寬度(會換行)
+            </div>
+            <span>
+                ...內容程式碼
+                區塊占用實際使用寬度(不換行)
+            </span>
+        容器
+    ------------------------------------------------------------------------------------------------------------------------
+        輸入方塊
+            <input type="text/password/date/range/flie/checkbox" placeholder="輸入提示文字"/>
+                帳號/密碼等使用的輸入格
+            <textarea>預設內容</textarea>
+                文章的輸入格
+        輸入方塊
+    其他標籤可詳見 W3schools HTML
+    ------------------------------------------------------------------------------------------------------------------------
+-->
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Test page</title>
+        <link rel="stylesheet" href="test.css"/>
+    </head>
+    <body>
+        <h1>Test page</h1>
+        <p>HTML test</p>
+
+        <p class="CSStest">CSS Test</p>
+        
+        <h2>JavaScript Test</h2>
+        <button id="testButton">JS Test Button</button>
+        <p id="JStestResult" style="color: brown; background-color: orange;"><b>Press the button</b></p>
+        <br/>
+        <script src="testpage.js"></script>
+    </body>
+</html>
